@@ -7,8 +7,8 @@ class Type extends Product{
     public $rate;
     public $image;
 
-    public function __construct($_title, Category $_category, $_name, $_price, $_rate, $_image) {
-        parent::__construct($_title, $_category);
+    public function __construct(Category $_category, $_name, float $_price, $_rate, $_image) {
+        parent::__construct($_category);
         $this->name = $_name;
         $this->price = $_price;
         $this->rate = $_rate;

@@ -5,8 +5,7 @@ class Product{
     public $title;
     public $category;
 
-    public function __construct($_title, Category $_category) {
-        $this->title = $_title;
+    public function __construct(Category $_category) {
         $this->category = $_category;
     }  
 }
