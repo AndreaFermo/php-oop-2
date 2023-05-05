@@ -9,3 +9,6 @@ class Category {
         $this->icon= $_icon;
     }
 }
+
+$dog = new Category('cane', 'icona');
+$cat = new Category('gatto', 'icona');
