@@ -1,16 +1,20 @@
 <?php
+require_once __DIR__ . '/Product.php';
 
-class Type{
-    public $tipology;
-    public $description;
+class Type extends Product{
+    public $name;
+    public $price;
+    public $rate;
+    public $image;
 
-    public function __construct($_tipology, $_description) {
-        $this->tipology= $_tipology;
-        $this->description= $_description;
-      
+    public function __construct($_title, Category $_category, $_name, $_price, $_rate, $_image) {
+        parent::__construct($_title, $_category);
+        $this->name = $_name;
+        $this->price = $_price;
+        $this->rate = $_rate;
+        $this->image = $_image;
     }
 }
 
-$food = new Type('cibo', 'prodotto ad uso alimentare');
-$toy = new Type('gioco', 'prodotto per svago e divertimento');
-$bed = new Type('cuccia', 'prodotto per la comodità');
+
+
