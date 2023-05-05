@@ -6,7 +6,11 @@ class Type{
 
     public function __construct($_tipology, $_description) {
         $this->tipology= $_tipology;
-        $this->descritpion= $_description;
+        $this->description= $_description;
       
     }
 }
+
+$food = new Type('cibo', 'prodotto ad uso alimentare');
+$toy = new Type('gioco', 'prodotto per svago e divertimento');
+$bed = new Type('cuccia', 'prodotto per la comodità');
