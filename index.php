@@ -24,13 +24,14 @@ $items= [$croquettes, $kennel, $laser];
                 <?php foreach($items as $item){?>
                 <div class="col">
                     <div class="card">
-                        <h3 class="card-title text-uppercase"><?php echo $item->title?> <span><i class="<?php echo $item->category->icon?>"></i></span></h3>
-                        <img src="<?php echo $item->image?>" class="card-img-top" alt="image <?php echo $item->title?>">
+                        <h3 class="card-title text-uppercase"><?php echo $item->title;?> <span><i class="<?php echo $item->category->icon;?>"></i></span></h3>
+                        <img src="<?php echo $item->image;?>" class="card-img-top" alt="image <?php echo $item->title?>">
                         <div class="card-body">
-                            <h4 class="card-text text-capitalize"><?php echo $item->name?></h4>
-                            <p class="card-text text-capitalize"><?php echo $item->model?></p>
-                            <h5 class="card-text">Prezzo: <?php echo $item->price?> €</h5>
-                            <h6 class="card-text"><?php echo $item->rate?>/5</h6>
+                            <h4 class="card-text text-capitalize"><?php echo $item->name;?></h4>
+                            <p class="card-text text-capitalize"><?php echo $item->model;?></p>
+                            <h5 class="card-text">Prezzo: <?php echo $item->price;?> €</h5>
+                            <h6 class="card-text"><?php echo $item->rate;?>/5</h6>
+                            <p class="card-text"><?php echo $item->weight . ' ' . $item->unit_of_measure;?></p>
                         </div>
                     </div>
                 </div>

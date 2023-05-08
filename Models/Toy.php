@@ -1,15 +1,18 @@
 <?php
 require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/../Traits/Weightable.php';
 
 class Toy extends Product {
-    public $model;
-    public $weight;
 
-    public function __construct(Category $_category, $_name, float $_price, $_rate, $_image, $_model, $_weight) {
+    use Weightable;
+    
+    public $model;
+    public $edible;
+
+    public function __construct(Category $_category, $_name, float $_price, $_rate, $_image, $_model, bool $_edible) {
         parent::__construct($_category, $_name, $_price, $_rate, $_image);
-       
         $this->model = $_model;
-        $this->weight = $_weight;
+        $this->edible = $_edible;
         $this->title = get_class($this);
     }
 }
