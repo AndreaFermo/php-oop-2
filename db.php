@@ -16,7 +16,7 @@ $laser->setWeight(100, 'g');
 $laser->setPrice(14.99);
 
 try {
-    $croquettes->setPrice('ciao');
+    $croquettes->setPrice('prova errore');
 } catch (Exception $e) {
     echo "Si è verificato un errore: " . $e->getMessage();
 }
