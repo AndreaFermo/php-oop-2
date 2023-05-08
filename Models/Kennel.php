@@ -9,8 +9,8 @@ class Kennel extends Product {
     public $model;
     public $material;
 
-        public function __construct(Category $_category, $_name, float $_price, $_rate, $_image, $_model, $_material) {
-        parent::__construct($_category, $_name, $_price, $_rate, $_image);
+        public function __construct(Category $_category, $_name, $_rate, $_image, $_model, $_material) {
+        parent::__construct($_category, $_name, $_rate, $_image);
         $this->model = $_model;
         $this->material = $_material;
         $this->title = get_class($this);

@@ -9,8 +9,8 @@ class Food extends Product {
     public $model;
     public $main_ingredient;
 
-    public function __construct(Category $_category, $_name, float $_price, $_rate, $_image, $_model, $_main_ingredient) {
-        parent::__construct($_category, $_name, $_price, $_rate, $_image);
+    public function __construct(Category $_category, $_name, $_rate, $_image, $_model, $_main_ingredient) {
+        parent::__construct($_category, $_name, $_rate, $_image);
         $this->model = $_model;
         $this->main_ingredient = $_main_ingredient;
         $this->title = get_class($this);
